@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact-styles.css">
+  <title>Contact Me</title>
+</head>
+<body><div id="form">
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+   <h1>Contact Me</h1><br>
+        <label for="name">Name</label> <br>
+        <input type="text" name="name" id="name" >
+<br>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" id="email" required>
+  <br>
+    How did you hear about me?
+    <br>
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" name="classmate" id="classmate">
+    <br>
+        <label for="resume">Resume Submission</label>
+        <input type="checkbox" name="resume" id="resume">
+     <br>
+      <label for="linkedin">LinkedIn</label>
+      <input type="checkbox" name="linkedin" id="linkedin">
+      <br>
+      <label for="academy">Coding Academy Rec</label>
+      <input type="checkbox" name="academy" id="academy">
+      <br>
+      Would you like to be contacted back?
+    <br>
+        <label for="yes">Yes</label>
+        <input type="radio" name="contact" id="yes" value="yes">
+     <br>
+        <label for="no">No</label>
+        <input type="radio" name="contact" id="no" value="no">
+        <br>
+        <label for="date">Birthdate</label> <br>
+        <input type="date" name="date" id="date" min="2019-06-10"> <br>
+        <label for="message">Message</label> <br>
+        <textarea id="message" name="message" maxlength="500" minlength="20" placeholder="Comments"></textarea>
+        <br>
+       <a href="result.html"> <button >Submit</button></a>
+    </div>
+  </form>
+  <!-- <script src="scripts.js"></script> --><script src="script.js"></script>
+
+</body>
+</html>
