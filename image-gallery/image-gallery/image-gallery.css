@@ -1,0 +1,215 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5% 5%;
+  grid-template-rows: max-content;
+  grid-template-columns: max-content;
+  grid-template-areas:
+    "one two three four"
+    "five six seven eight"
+    "nine ten eleven twelve"
+    "thirteen fourteen fifteen sixteen"
+    "seventeen eighteen nineteen twenty";
+    align-content: space-between;
+}
+
+.image {
+  display:block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: gray;
+  
+}
+.one { grid-area: one;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.two { grid-area: two; position: relative;
+  width: 300px;
+  height: 300px  ;}
+
+
+
+.three { grid-area: three;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.four { grid-area: four;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.five { grid-area: five;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.six { grid-area: six;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.seven { grid-area: seven;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.eight { grid-area: eight;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.nine { grid-area: nine;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.ten { grid-area: ten;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.eleven { grid-area: eleven;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.twelve { grid-area: twelve;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.thirteen { grid-area: thirteen;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.fourteen { grid-area: fourteen;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.fifteen { grid-area: fifteen;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.sixteen { grid-area: sixteen;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.seventeen { grid-area: seventeen;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.eighteen { grid-area: eighteen;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.nineteen { grid-area: nineteen;position: relative;
+  width: 300px;
+  height: 300px;
+}
+.twenty { grid-area: twenty;position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.one:hover .overlay{
+  opacity: 1;
+}
+.two:hover .overlay{
+  opacity: 1;
+  animation-play-state: running;
+}
+.three:hover .overlay{
+  opacity: 1;
+}
+.four:hover .overlay{
+  opacity: 1;
+}
+.five:hover .overlay{
+  opacity: 1;
+}
+.six:hover .overlay{
+  opacity: 1;
+}
+.seven:hover .overlay{
+  opacity: 1;
+}
+.eight:hover .overlay{
+  opacity: 1;
+}
+.nine:hover .overlay{
+  opacity: 1;
+}
+.ten:hover .overlay{
+  opacity: 1;
+}
+.eleven:hover .overlay{
+  opacity: 1;
+}
+.twelve:hover .overlay{
+  opacity: 1;
+}
+.thirteen:hover .overlay{
+  opacity: 1;
+}
+.fourteen:hover .overlay{
+  opacity: 1;
+}
+.fifteen:hover .overlay{
+  opacity: 1;
+}
+.sixteen:hover .overlay{
+  opacity: 1;
+}
+.seventeen:hover .overlay{
+  opacity: 1;
+}
+.eighteen:hover .overlay{
+  opacity: 1;
+}
+.nineteen:hover .overlay{
+  opacity: 1;
+}
+.twenty:hover .overlay{
+  opacity: 1;
+}
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px #000;
+}
