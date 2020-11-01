@@ -15,3 +15,44 @@ font-family: Arial, Helvetica, sans-serif;
 .beginning {
     align-items: center;
 }
+
+.transform {
+    -webkit-transition: all 2s ease;  
+    -moz-transition: all 2s ease;  
+    -o-transition: all 2s ease;  
+    -ms-transition: all 2s ease;  
+    transition: all 2s ease;
+  }
+  
+  .transform-active {
+    background-color: #45CEE0;
+    height: 200px;
+    width: 200px;
+  }
+
+  #pic {
+    opacity: 1;
+}
+#pic:hover {
+    opacity: 0;
+}
+
+    #name {
+      color: transparent;
+      text-decoration: none;
+      transition: color 0.3s linear;
+      -webkit-transition: color 0.3s linear;
+      -moz-transition: color 0.3s linear;
+  }
+      
+#name:active
+{
+  color: black;
+}
+#number {
+  color:transparent;
+}
+
+#number:active {
+  color:black;
+}
